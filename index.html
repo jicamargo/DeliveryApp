@@ -1,18 +1,65 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Popper Tutorial</title>
-  </head>
-  <body>
-    <button id="button" aria-describedby="tooltip">My button</button>
-    <div id="tooltip" role="tooltip">My tooltip</div>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My order now</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/917f33c010.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  
+    <header>
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-auto">
+              <h1>MyOrderNow</h1>
+          </div>
+          <div class="col-auto">
+              <div class="avatar-container" data-bs-target="#profileOptions" data-bs-toggle="modal">
+                <img src="img/avatar.png" alt=""><i class="fas fa-cog"></i>
+              </div>
+          </div>
+        </div>
+      </div>
 
-    <script src="js/popper.js"></script>
-    <script>
-      const button = document.querySelector('#button');
-      const tooltip = document.querySelector('#tooltip');
+      
+      <!-- Modal -->
+      <div class="modal fade profile-options-modal" id="profileOptions" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
 
-      const popperInstance = Popper.createPopper(button, tooltip);
-    </script>
-  </body>
+            <div class="modal-header">
+              <h1 class="modal-title fs-5">Opciones</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <ul class="profile-options-list">
+                <li>
+                  <a href="#"><i class="fas fa-user"></i> Mi perfil</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-map-marker-alt"></i> Mis direcciones</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-credit-card"></i> Mis tarjetas</a>
+                </li>
+                <li>
+                  <a href="#" class="text-danger"><i class="fas fa-times-circle"></i> Cerrar sesión</a>
+                </li>
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+    </header>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
 </html>
