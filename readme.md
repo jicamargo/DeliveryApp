@@ -1,3 +1,7 @@
-#titulo
+# titulo de esta practica
 
-##titulo
+estoy aprendiendo mucho
+
+## subtitulo de prueba
+
+ademas de que cada dia es mejor
