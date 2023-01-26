@@ -89,34 +89,35 @@ header{
 			color: $primary;
 		}
 	}
+}
 
-	.profile-options-modal{
-		.profile-options-list{
-			padding: 0;
-			margin: 0;
-			list-style: none;
-			
 
-			li{
-				a{
-					display: block;
-					padding: 10px 0;
-					color: $black2;
-					text-decoration-line: initial;
-					
+//modal
+.profile-options-modal{
+	.profile-options-list{
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		
 
-					i{
-						display: inline-block;
-						width: 18px;
-						text-align: center;
-						margin-right: 5px;
-					}
+		li{
+			a{
+				display: block;
+				padding: 10px 0;
+				color: $black2;
+				text-decoration-line: initial;
+				
+
+				i{
+					display: inline-block;
+					width: 18px;
+					text-align: center;
+					margin-right: 5px;
 				}
 			}
 		}
 	}
 }
-
 
 //main
 .main{
